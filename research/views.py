@@ -1,3 +1,7 @@
-from django.shortcuts import render
+from rest_framework import viewsets
+from .models import LearningRecord
+from .serializers import LearningRecordSerializer
 
-# Create your views here.
+class LearningRecordViewSet(viewsets.ModelViewSet):
+    queryset = LearningRecord.objects.all().order_by('-created_at')
+    serializer_class = LearningRecordSerializer
