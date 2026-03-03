@@ -1,4 +1,3 @@
-# urls.py
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
 from .views import (
@@ -15,5 +14,5 @@ router.register(r"gaps", KnowledgeGapViewSet, basename="gaps")
 router.register(r"dashboard", DashboardViewSet, basename="dashboard")
 
 urlpatterns = [
-    path("api/", include(router.urls)),
+    path("", include(router.urls)),  # ← no prefix here
 ]

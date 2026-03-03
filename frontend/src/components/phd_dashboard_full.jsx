@@ -5,7 +5,7 @@ import {
 } from "recharts";
 
 // ─── CONFIG ──────────────────────────────────────────────────────────────────
-const API_BASE = "http://localhost:8000/api";
+const API_BASE = "http://localhost:8000/api/v1";
 
 const PILLAR_CHOICES = [
   { value: "AI_FORENSICS", label: "AI Forensics" },
