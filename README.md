@@ -1,6 +1,6 @@
 # Learning_Efficiency2_0
 
-# Learning Record Model Analysis
+### Learning Record Model Analysis
 
 ## Formula
 ```
