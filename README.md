@@ -268,11 +268,11 @@ Conditions that feel harder during study produce more durable learning:
 **Theory 2: The Ebbinghaus Forgetting Curve**
 Hermann Ebbinghaus (1880s–1885) ran the first rigorous experiments on memory — on himself, memorising thousands of nonsense syllables. What he discovered was unsettling: without reinforcement, memory decays in a predictable, rapid curve.
 
-![image1](Screenshot From 2026-03-24 00-21-30.png)
+![image1](image1.png)
 
 - After 1 day without review, roughly 56% of new material is forgotten. After a week, ~77% is gone.
 
-![Green dots mark review sessions. Each review resets and strengthens the curve — the same material becomes progressively harder to forget.](Screenshot From 2026-03-24 00-21-20.png)
+![Green dots mark review sessions. Each review resets and strengthens the curve — the same material becomes progressively harder to forget.](image2.png)
 
 
 ---
