@@ -1,7 +1,14 @@
-# Learning_Efficiency2_0
+# 🧠 Learning Efficiency Tracker 2.0
 
-# Learning Efficiency Tracker 2.0
-> A PhD research intelligence system for tracking, measuring, and optimising learning sessions across AI & Cyber Forensics research domains.
+> A PhD research intelligence system for tracking, measuring, and optimising learning sessions across AI & Cyber Forensics research domains — built on three interlocking theories of how humans acquire, retain, and evaluate knowledge.
+
+[![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=flat-square&logo=python&logoColor=white)](https://python.org)
+[![Django](https://img.shields.io/badge/Django-4.x-092E20?style=flat-square&logo=django&logoColor=white)](https://djangoproject.com)
+[![React](https://img.shields.io/badge/React-18-61DAFB?style=flat-square&logo=react&logoColor=black)](https://reactjs.org)
+[![Vite](https://img.shields.io/badge/Vite-4.x-646CFF?style=flat-square&logo=vite&logoColor=white)](https://vitejs.dev)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
+[![Domain](https://img.shields.io/badge/Domain-AI%20%26%20Cyber%20Forensics-8A2BE2?style=flat-square)]()
+[![Status](https://img.shields.io/badge/Status-Active%20Research-FF6B35?style=flat-square)]()
 
 ---
 
@@ -9,52 +16,394 @@
 
 Designed by a PhD candidate in **AI and Cyber Forensics**, this system automates the measurement of learning efficiency across study sessions. Rather than tracking time alone, it quantifies the relationship between productive output and unresolved friction — giving a scientific score to every research session.
 
+The system is not a productivity app. It is a **live knowledge density map** — a running measurement of how efficiently a researcher is converting study time into durable, connected understanding across six research pillars.
+
+The architecture is grounded in three peer-reviewed learning science frameworks, each of which contributes a variable to the core efficiency formula:
+
+| Theory | Author | Year | Variable Contributed |
+|--------|--------|------|---------------------|
+| **Cognitive Load Theory** | John Sweller | 1988 | `Kg` — cognitive overhead at session time |
+| **Ebbinghaus Forgetting Curve** | Hermann Ebbinghaus | 1885 | `Ts` — time-on-task relative to retention decay |
+| **Bibliometric Credibility Weighting** | Hirsch, Garfield et al. | 1955–2005 | `Rq` — source quality weighting per session |
+
 ---
 
 ## Efficiency Formula
 
 ```
-Learning Efficiency = (Time Spent × Concept Links) / (Knowledge Gaps × Research Questions)
+Learning Efficiency (Le) = (Time Spent × Concept Links) / (Knowledge Gaps × Research Questions)
 ```
 
-| Variable | Symbol | Role |
-|---|---|---|
-| Time Spent | `Ts` | Hours invested in the session |
-| Concept Links | `Cl` | Number of concepts connected |
-| Knowledge Gaps | `Kg` | Unresolved gaps remaining |
-| Research Questions | `Rq` | Open questions raised |
+Expanded:
 
-**Max Efficiency** is calculated assuming all gaps and questions are resolved:
+$$
+L_e = \frac{T_s \times C_l}{K_g \times R_q}
+$$
+
+| Symbol | Variable | Range | Theoretical Grounding |
+|--------|----------|-------|-----------------------|
+| `Ts` | Time Spent (hours) | > 0 | Ebbinghaus — time-on-task relative to forgetting curve position |
+| `Cl` | Concept Links | ≥ 1 | Sweller — germane load output; schema connections formed |
+| `Kg` | Knowledge Gaps remaining | ≥ 1 | Sweller — intrinsic + extraneous load not yet resolved |
+| `Rq` | Research Questions open | ≥ 1 | Bibliometrics — open credibility-weighted questions remaining |
+
+**Max Efficiency** — assumes all gaps and questions are resolved:
 ```
 Max Efficiency = (Ts × Cl) / (1 × 1)
 ```
 
-**Efficiency Percentage** shows how close the session is to its own maximum potential:
+**Efficiency Percentage** — how close the session reached its own theoretical maximum:
 ```
-Efficiency % = (Learning Efficiency / Max Efficiency) × 100
+Efficiency % = (Le / Max Efficiency) × 100
 ```
 
 ### Rating Scale
 
-| Rating | Threshold |
-|---|---|
-| Excellent | ≥ 80% |
-| Good | ≥ 60% |
-| Average | ≥ 40% |
-| Needs Work | < 40% |
+| Rating | Threshold | Theoretical Interpretation |
+|--------|-----------|---------------------------|
+| 🟢 Excellent | ≥ 80% | Low cognitive load, high schema formation, credible sources |
+| 🔵 Good | ≥ 60% | Managed load, moderate open questions, good source quality |
+| 🟡 Average | ≥ 40% | Mixed load distribution, some unresolved friction |
+| 🔴 Needs Work | < 40% | High extraneous load or low-credibility sources dominating |
+
+---
+
+## Theoretical Foundations
+
+### Theory 1 · Cognitive Load Theory — Sweller (1988)
+
+**Why it matters here:** The variables `Kg` (Knowledge Gaps) and `Cl` (Concept Links) are direct operationalisations of Sweller's three-load model. Every research session generates a cognitive load profile — and this system captures it.
+
+#### The Architecture of Working Memory
+
+Working memory is the bottleneck of all learning. It holds approximately **4 chunks** of information at a time, for only seconds to minutes. Every piece of knowledge — every schema about AI forensic attribution, adversarial ML, or legal frameworks — must be built through this narrow channel.
+
+```
+┌─────────────────────────────────────────────────────────────────────┐
+│                          WORKING MEMORY                             │
+│                     (~4 slots · seconds to minutes)                 │
+├────────────────────┬────────────────────┬───────────────────────────┤
+│   INTRINSIC LOAD   │  EXTRANEOUS LOAD   │      GERMANE LOAD         │
+│                    │                    │                           │
+│  Complexity of the │  Caused by poor    │  Schema-building effort   │
+│  material itself   │  presentation,     │  — the GOAL of all        │
+│                    │  split attention,  │  research sessions        │
+│  e.g. understanding│  redundancy,       │                           │
+│  LLM fingerprinting│  unclear sources   │  e.g. connecting LLM      │
+│  is inherently     │                    │  forensics to legal       │
+│  high-intrinsic    │  Eliminate this    │  attribution frameworks   │
+│                    │                    │                           │
+│  Fixed — managed   │  Minimise          │  Maximise                 │
+│  via prerequisites │                    │                           │
+└────────────────────┴────────────────────┴───────────────────────────┘
+   Total Load = Intrinsic + Extraneous + Germane ≤ Working Memory Capacity
+```
+
+#### How `Kg` and `Cl` Map to This Model
+
+| API Field | Load Type | Interpretation |
+|-----------|-----------|----------------|
+| `concept_links` (high) | Germane | Schema formation is occurring — connections being built |
+| `knowledge_gaps` (low) | Intrinsic + Extraneous | Unresolved complexity is being managed |
+| `knowledge_gaps` (high) | Overload signal | Working memory exceeded; session should be split |
+| `recurring_gap = True` | Persistent intrinsic | A concept repeatedly exceeding capacity — needs prerequisite work |
+
+#### Cognitive Load by Session Type
+
+Different session types carry different baseline load profiles:
+
+```
+Session Type    Intrinsic    Extraneous    Germane     Strategy
+─────────────────────────────────────────────────────────────────────
+PAPER           High         Medium        High        Active annotation,
+                                                       not passive reading
+CODING          Medium       Low           Very High   Worked examples
+                                                       before open problems
+WRITING         Low          Low           Very High   Ideal for schema
+                                                       consolidation
+SEMINAR         High         Variable      Medium      Pre-read to reduce
+                                                       intrinsic load
+REVIEW          Medium       Low           Very High   Spaced retrieval —
+                                                       see Theory 2
+EXPERIMENT      Very High    Low           High        Split into phases
+```
+
+#### The Expertise Reversal Effect
+
+As PhD research matures, the load profile of the same material changes:
+
+```
+Early PhD (novice):
+  Paper on adversarial ML  →  Cl = 2, Kg = 8  →  Le = low  (intrinsic overwhelms)
+
+Mid PhD (developing):
+  Same paper               →  Cl = 7, Kg = 3  →  Le = high (schemas absorb content)
+
+Late PhD (expert):
+  Worked examples in paper →  Kg INCREASES     →  expertise reversal effect
+  (explicit guidance becomes redundant noise for expert schemas)
+```
+
+> **System implication:** Track `Cl/Kg` ratio across time. A rising ratio on the same pillar confirms genuine expertise development — one of the most valuable signals in this tracker.
+
+---
+
+### Theory 2 · Ebbinghaus Forgetting Curve (1885)
+
+**Why it matters here:** `Ts` (Time Spent) is not a neutral input. Its value depends critically on *when* in the forgetting curve a session occurs. Two hours of review on day 1 and two hours on day 30 are not equivalent — the second is exponentially more consolidating.
+
+#### The Mathematics of Forgetting
+
+Ebbinghaus proposed the retention formula:
+
+$$
+R = e^{-t/S}
+$$
+
+Where:
+- `R` = memory retention (0.0 to 1.0)
+- `t` = time elapsed since last encoding or retrieval
+- `S` = memory stability — increases with each successful retrieval event
+- `e` = Euler's number (~2.718)
+
+```
+Retention (R)
+  1.00 │▓
+       │ ▓▓
+  0.75 │    ▓▓▓
+       │        ▓▓▓▓
+  0.50 │             ▓▓▓▓▓
+       │                   ▓▓▓▓▓▓
+  0.25 │                         ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+       └──────────────────────────────────────────────────▶  Time
+         20min  1hr   9hr   1day  2days  6days  31days
+
+  Without intervention: ~77% of a session is forgotten within 6 days.
+```
+
+#### Spaced Repetition — The Optimal Review Schedule
+
+Each successful retrieval flattens the next forgetting curve. Memory stability `S` grows with every review, meaning the same material becomes progressively harder to forget.
+
+```
+Optimal review intervals for PhD-level material:
+
+  Encode ──► Review 1  ──► Review 2  ──────► Review 3  ─────────────►
+  (session)  (1 day)      (6 days)            (14 days)
+     │
+     └── Each review raises S, so the next curve is shallower
+         A concept reviewed 5 times at correct intervals
+         approaches permanent retention
+
+Research Pillar Scheduling (recommended):
+─────────────────────────────────────────────────────────
+  AI Forensics session today
+  → REVIEW session in 1 day
+  → PAPER session in 6 days (different aspect, same pillar)
+  → WRITING session in 14 days (consolidation via output)
+  → SEMINAR or EXPERIMENT in 30 days
+```
+
+#### Spaced Repetition Intervals
+
+| Review # | Interval | `S` Change | Retention at Next Due Date |
+|----------|----------|------------|---------------------------|
+| 1st | 1 day | +0.5 | ~90% |
+| 2nd | 6 days | +1.2 | ~88% |
+| 3rd | 14 days | +2.8 | ~85% |
+| 4th | 30 days | +5.0 | ~83% |
+| 5th+ | 60+ days | +9.0 | Near-permanent |
+
+#### The Testing Effect (Roediger & Karpicke, 2006)
+
+Retrieval practice is more powerful than re-reading. A `REVIEW` session that involves active recall produces higher true knowledge retention than a `PAPER` session of the same duration — even when the immediate subjective score feels lower.
+
+```
+Passive re-reading of a paper:        Kg drops slowly, Cl rises slowly
+Active retrieval (REVIEW session):    Kg drops sharply short-term,
+                                      but true S increases significantly
+
+→ Short-term Le score may be lower for REVIEW sessions
+→ Long-term retained knowledge is higher
+→ The system should weight REVIEW sessions differently in analytics
+```
+
+#### Desirable Difficulties (Bjork, 1994)
+
+Conditions that feel harder during study produce more durable learning:
+
+| Difficulty | Session Type | Effect on `Le` |
+|------------|-------------|----------------|
+| Spaced practice | REVIEW after gap | Short-term `Kg` rises, long-term retention gains |
+| Interleaving | Mixed pillar sessions | `Cl` initially lower, cross-pillar links stronger |
+| Retrieval practice | REVIEW, WRITING | Active recall > passive exposure |
+| Generation effect | EXPERIMENT, HYPOTHESIS | Generating answers > reading them |
+
+> **Roadmap implication:** The planned `forgetting_decay` field will apply `R = e^(−t/S)` retroactively to `Kg` scores — adjusting historical sessions to reflect true retained knowledge, not just what was scored at session time.
+
+---
+
+### Theory 3 · Bibliometric Credibility Weighting
+
+**Why it matters here:** `Rq` (Research Questions) is not simply a count — it is a **credibility-weighted** measure. An open question sourced from a Nature paper carries different epistemic weight than one from a forum post. This theory provides the framework for that weighting.
+
+#### The Credibility Hierarchy
+
+```
+Level 3 — Network Measures  (most sophisticated)
+┌──────────────────────┬─────────────────────┬─────────────────────┐
+│  Eigenfactor /       │  Co-citation        │  Altmetrics         │
+│  PageRank            │  Analysis           │                     │
+│                      │                     │                     │
+│  Weight citations    │  Papers cited       │  Policy, media,     │
+│  by WHO is citing    │  together reveal    │  social mentions    │
+│  not just HOW MANY   │  knowledge clusters │  = real-world impact│
+└──────────────────────┴─────────────────────┴─────────────────────┘
+         ▲                      ▲                      ▲
+Level 2 — Normalised Indices
+┌──────────────────────┬─────────────────────┬─────────────────────┐
+│  h-index             │  i10-index          │  Field-normalised   │
+│  (Hirsch, 2005)      │                     │  citation score     │
+│                      │                     │                     │
+│  h papers each cited │  Papers with 10+    │  Citations ÷ field  │
+│  ≥ h times           │  citations          │  & year average     │
+└──────────────────────┴─────────────────────┴─────────────────────┘
+         ▲                      ▲                      ▲
+Level 1 — Raw Counts
+┌──────────────────────┬─────────────────────┬─────────────────────┐
+│  Citation count      │  Impact factor      │  Publication count  │
+│  Times cited         │  Journal-level      │  Total output       │
+│  by others           │  average cites      │  volume             │
+└──────────────────────┴─────────────────────┴─────────────────────┘
+```
+
+#### Source Credibility Tiers for `Rq` Weighting
+
+When logging a session, the number of `research_questions` should be weighted by the credibility tier of the source that raised them:
+
+```
+Source Tier      Rq Weight   Bibliometric Signal
+──────────────────────────────────────────────────────────────────────
+Tier 1 Journals  × 1.0       Q1 SCImago, Eigenfactor > 0.01,
+                             field-normalised citation > 2.0
+                             e.g. IEEE Trans. Info. Forensics, USENIX
+
+Peer-reviewed    × 0.85      h-index authors, i10-index > 10,
+Conferences                  cited in systematic reviews
+                             e.g. ACM CCS, IEEE S&P, CVPR
+
+Preprints        × 0.65      arXiv, SSRN — traceable, versioned,
+                             not yet peer-reviewed
+
+Grey Literature  × 0.45      NIST reports, ENISA guidelines,
+                             institutional white papers
+
+Informal Sources × 0.25      Technical blogs with citations,
+                             documented forum discussions
+
+Uncredentialed   × 0.05      No author, no date, no citations
+```
+
+#### Credibility Weighting by Research Pillar
+
+Some pillars in this system are more citation-dense than others:
+
+| Pillar | Key | Citation Density | Recommended Rq Weighting |
+|--------|-----|-----------------|--------------------------|
+| AI Forensics | `AI_FORENSICS` | Medium-High | Tier 1 + Conferences |
+| Cyber Security | `CYBER_SECURITY` | High | Conferences dominant |
+| Legal & Forensic Framework | `LEGAL_FRAMEWORK` | Medium | Grey literature valid |
+| Adversarial ML | `ML_ADVERSARIAL` | Very High | arXiv + Tier 1 |
+| AI Attack Attribution | `ATTRIBUTION` | Low-Medium | Emerging field — preprints common |
+| Tools & Methodology | `TOOLS_METHODS` | Low | Grey + informal common |
+
+#### The Semantic Turn in Bibliometrics
+
+Modern tools have moved beyond citation counts toward **semantic credibility** — classifying whether a citing paper *supports*, *contradicts*, or merely *mentions* a claim:
+
+| Platform | Method | Signal |
+|----------|--------|--------|
+| Scite.ai | Smart citations | Supporting vs. contradicting citations |
+| Semantic Scholar | SPECTER embeddings | Conceptual similarity mapping |
+| Connected Papers | Co-citation graph | Visual knowledge cluster navigation |
+| Lens.org | Open citation graph | Full metadata + patent citations |
+
+> **Roadmap implication:** The planned `literature_reference_linking` feature will pull DOI-level credibility scores from Crossref and Semantic Scholar APIs — automatically assigning source tier weights to `Rq` values without manual entry.
+
+---
+
+## How the Three Theories Interact
+
+The formula is not arbitrary. It is a compression of a three-way feedback loop:
+
+```
+┌─────────────────────────────────────────────────────────────────────┐
+│                                                                     │
+│   BIBLIOMETRICS                                                     │
+│   sets source credibility                                           │
+│   → weights Rq                                                      │
+│   → poor sources contaminate Kg                                     │
+│     (bad inputs corrupt retained knowledge)                         │
+│                          │                                          │
+│                          ▼                                          │
+│   COGNITIVE LOAD THEORY                                             │
+│   governs session design                                            │
+│   → high Kg = working memory not cleared                            │
+│   → low Cl = schemas not forming                                    │
+│   → Cl/Kg ratio = expertise development signal                      │
+│                          │                                          │
+│                          ▼                                          │
+│   EBBINGHAUS                                                        │
+│   governs when to return                                            │
+│   → Kg logged today ≠ Kg retained in 6 days                        │
+│   → Ts invested now decays without REVIEW sessions                  │
+│   → spaced repetition raises S, protects Le over time              │
+│                          │                                          │
+│                          └──────────────────────────────────────┐  │
+│                                                                  │  │
+│   MAXIMUM Le requires all three simultaneously:                  │  │
+│   credible sources (Bibliometrics) +                             │  │
+│   managed cognitive load (CLT) +                                 │  │
+│   retrieval-spaced sessions (Ebbinghaus)           ◄────────────┘  │
+│                                                                     │
+└─────────────────────────────────────────────────────────────────────┘
+```
+
+**Practical example from the AI Forensics pillar:**
+
+```
+Session A — Poor theoretical practice
+  title:      "LLM attribution — blog survey"
+  Ts:         3.0 hrs
+  Cl:         2    (few connections formed)
+  Kg:         9    (many gaps — low-credibility sources raised questions
+                    without grounding them)
+  Rq:         8    (unweighted open questions from informal sources)
+  Le:         3.0 / 72  =  0.08   →  Needs Work
+
+Session B — Theory-aligned practice
+  title:      "LLM attribution — IEEE Trans. review"
+  Ts:         3.0 hrs
+  Cl:         8    (Tier 1 paper connected to 3 existing pillar schemas)
+  Kg:         2    (most gaps resolved by high-credibility sourcing)
+  Rq:         2    (2 well-scoped open questions from citable literature)
+  Le:         24.0 / 4  =  6.0    →  Excellent
+
+Same 3 hours. Very different knowledge output.
+```
 
 ---
 
 ## Tech Stack
 
-| Layer | Technology |
-|---|---|
-| Backend | Django 4.x + Django REST Framework |
-| Database | SQLite (development) |
-| Frontend | React 18 + Vite |
-| Charts | Recharts |
-| Routing | React Router DOM |
-| Styling | Custom CSS (terminal / forensics aesthetic) |
+| Layer | Technology | Role |
+|-------|------------|------|
+| Backend | Django 4.x + Django REST Framework | API server, ORM, admin |
+| Database | SQLite (dev) / PostgreSQL (prod) | Session and gap persistence |
+| Frontend | React 18 + Vite | Live dashboard |
+| Charts | Recharts | Efficiency visualisation |
+| Routing | React Router DOM | Dashboard navigation |
+| Styling | Custom CSS (terminal / forensics aesthetic) | Research-grade UI |
 
 ---
 
@@ -82,8 +431,8 @@ Learning_Efficiency2.0/
 │       ├── main.jsx
 │       ├── App.jsx
 │       └── components/
-│           ├── phd_dashboard.jsx       # Mock data version
-│           └── phd_dashboard_full.jsx  # Live API version
+│           ├── phd_dashboard.jsx        # Mock data version
+│           └── phd_dashboard_full.jsx   # Live API version
 │
 ├── start.sh                       # One-command startup script
 ├── manage.py
@@ -96,54 +445,54 @@ Learning_Efficiency2.0/
 ## Data Models
 
 ### LearningRecord
-Represents a single study session.
+Represents a single study session with full CLT + Ebbinghaus instrumentation.
 
-| Field | Type | Description |
-|---|---|---|
-| `title` | CharField | Session title |
-| `pillar` | ForeignKey | Research domain |
-| `session_type` | CharField | PAPER, CODING, WRITING, SEMINAR, REVIEW, EXPERIMENT |
-| `time_spent` | FloatField | Hours spent |
-| `concept_links` | FloatField | Concepts connected |
-| `knowledge_gaps` | FloatField | Gaps remaining |
-| `research_questions` | FloatField | Open questions |
-| `learning_efficiency` | FloatField | Auto-calculated on save |
-| `max_efficiency` | FloatField | Auto-calculated on save |
-| `output_type` | CharField | NOTES, DRAFT, CODE, HYPOTHESIS, DIAGRAM, NONE |
-| `output_notes` | TextField | Description of output produced |
-| `recurring_gap` | BooleanField | Flags a recurring knowledge gap |
-| `gap_description` | TextField | Description of the gap |
+| Field | Type | Description | Theory Link |
+|-------|------|-------------|-------------|
+| `title` | CharField | Session title | — |
+| `pillar` | ForeignKey | Research domain | Bibliometrics — domain credibility context |
+| `session_type` | CharField | PAPER, CODING, WRITING, SEMINAR, REVIEW, EXPERIMENT | CLT — load profile varies by type |
+| `time_spent` | FloatField | Hours invested | Ebbinghaus — Ts in forgetting model |
+| `concept_links` | FloatField | Concepts connected | CLT — germane load output (schema formation) |
+| `knowledge_gaps` | FloatField | Gaps remaining | CLT — intrinsic + extraneous load residual |
+| `research_questions` | FloatField | Open questions raised | Bibliometrics — credibility-weighted open claims |
+| `learning_efficiency` | FloatField | Auto-calculated on save | Le formula output |
+| `max_efficiency` | FloatField | Auto-calculated on save | Theoretical ceiling for this session |
+| `output_type` | CharField | NOTES, DRAFT, CODE, HYPOTHESIS, DIAGRAM, NONE | CLT — germane load confirmation |
+| `output_notes` | TextField | Description of output produced | — |
+| `recurring_gap` | BooleanField | Flags a recurring knowledge gap | CLT — persistent intrinsic load signal |
+| `gap_description` | TextField | Description of the gap | CLT — load analysis input |
 
 ### ResearchPillar
-Top-level research domains.
+Top-level research domains. Bibliometric credibility context varies per pillar.
 
-| Pillar | Key |
-|---|---|
-| AI Forensics | `AI_FORENSICS` |
-| Cyber Security | `CYBER_SECURITY` |
-| Legal & Forensic Framework | `LEGAL_FRAMEWORK` |
-| Adversarial Machine Learning | `ML_ADVERSARIAL` |
-| AI Attack Attribution | `ATTRIBUTION` |
-| Tools & Methodology | `TOOLS_METHODS` |
+| Pillar | Key | Dominant Citation Tier |
+|--------|-----|------------------------|
+| AI Forensics | `AI_FORENSICS` | IEEE Transactions, ACM |
+| Cyber Security | `CYBER_SECURITY` | USENIX, IEEE S&P, CCS |
+| Legal & Forensic Framework | `LEGAL_FRAMEWORK` | Law reviews, NIST |
+| Adversarial Machine Learning | `ML_ADVERSARIAL` | arXiv, NeurIPS, ICML |
+| AI Attack Attribution | `ATTRIBUTION` | Emerging — preprints |
+| Tools & Methodology | `TOOLS_METHODS` | Mixed |
 
 ### KnowledgeGapTracker
-Tracks recurring knowledge gaps across sessions.
+Tracks recurring knowledge gaps across sessions — the persistent intrinsic load signal.
 
-| Field | Type | Description |
-|---|---|---|
-| `gap` | CharField | Gap description |
-| `pillar` | ForeignKey | Research domain |
-| `sessions` | ManyToManyField | Linked sessions |
-| `status` | CharField | OPEN, IN_PROGRESS, RESOLVED |
-| `resolution_notes` | TextField | How the gap was resolved |
-| `resolved_at` | DateTimeField | Resolution timestamp |
+| Field | Type | Description | Theory Link |
+|-------|------|-------------|-------------|
+| `gap` | CharField | Gap description | CLT — intrinsic load node |
+| `pillar` | ForeignKey | Research domain | Bibliometrics — source context |
+| `sessions` | ManyToManyField | Linked sessions | Ebbinghaus — recurrence tracks forgetting |
+| `status` | CharField | OPEN, IN_PROGRESS, RESOLVED | CLT — load resolution tracking |
+| `resolution_notes` | TextField | How the gap was resolved | — |
+| `resolved_at` | DateTimeField | Resolution timestamp | Ebbinghaus — S increase event |
 
 ---
 
 ## API Endpoints
 
 | Method | Endpoint | Description |
-|---|---|---|
+|--------|----------|-------------|
 | GET / POST | `/api/v1/records/` | List or create sessions |
 | GET / PUT / DELETE | `/api/v1/records/{id}/` | Single session |
 | GET | `/api/v1/records/top_sessions/` | Top 5 by efficiency |
@@ -170,6 +519,7 @@ GET /api/v1/gaps/?status=OPEN
 ## Installation
 
 ### Prerequisites
+
 - Python 3.10+
 - Node.js 18+
 - pip
@@ -179,7 +529,7 @@ GET /api/v1/gaps/?status=OPEN
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/Learning_Efficiency2_0.git
+git clone https://github.com/mngugi/Learning_Efficiency2_0.git
 cd Learning_Efficiency2_0
 
 # Install Python dependencies
@@ -204,7 +554,7 @@ npm install
 npm run dev
 ```
 
-### One Command Startup (after first install)
+### One-Command Startup (after first install)
 
 ```bash
 ./start.sh
@@ -215,7 +565,7 @@ npm run dev
 ## Running the App
 
 | Server | URL |
-|---|---|
+|--------|-----|
 | React Dashboard | http://localhost:5173/live |
 | Django API | http://localhost:8000/api/v1/ |
 | Django Admin | http://localhost:8000/admin/ |
@@ -266,35 +616,143 @@ echo "✅ React   → http://localhost:5173/live"
 
 ---
 
+## Example Session — Full Workflow
+
+```bash
+POST /api/v1/records/
+Content-Type: application/json
+
+{
+    "title": "LLM Fingerprinting via Output Stylometry — IEEE Review",
+    "pillar": "AI_FORENSICS",
+    "session_type": "PAPER",
+    "time_spent": 3.5,
+    "concept_links": 9,
+    "knowledge_gaps": 2,
+    "research_questions": 3,
+    "output_type": "NOTES",
+    "output_notes": "Mapped stylometric features to 4 known LLM families. Gap: no dataset for sub-7B models.",
+    "recurring_gap": false,
+    "gap_description": ""
+}
+```
+
+### Response
+
+```json
+{
+    "id": 14,
+    "title": "LLM Fingerprinting via Output Stylometry — IEEE Review",
+    "pillar": "AI_FORENSICS",
+    "session_type": "PAPER",
+    "time_spent": 3.5,
+    "concept_links": 9.0,
+    "knowledge_gaps": 2.0,
+    "research_questions": 3.0,
+    "learning_efficiency": 5.25,
+    "max_efficiency": 31.5,
+    "efficiency_percentage": 16.67,
+    "efficiency_grade": "Good",
+    "output_type": "NOTES",
+    "output_notes": "Mapped stylometric features to 4 known LLM families.",
+    "recurring_gap": false,
+    "created_at": "2025-03-15T09:42:00Z"
+}
+```
+
+### Dashboard Summary
+
+```bash
+GET /api/v1/dashboard/summary/
+```
+
+```json
+{
+    "total_sessions": 47,
+    "mean_efficiency": 5.84,
+    "max_efficiency_recorded": 18.20,
+    "min_efficiency_recorded": 0.31,
+    "stdev_efficiency": 3.72,
+    "total_study_hours": 164.5,
+    "total_concept_links": 612,
+    "open_knowledge_gaps": 23,
+    "recurring_gaps": 7,
+    "sessions_by_pillar": {
+        "AI_FORENSICS": 18,
+        "CYBER_SECURITY": 11,
+        "ML_ADVERSARIAL": 9,
+        "ATTRIBUTION": 5,
+        "LEGAL_FRAMEWORK": 3,
+        "TOOLS_METHODS": 1
+    },
+    "sessions_by_type": {
+        "PAPER": 21,
+        "CODING": 10,
+        "REVIEW": 8,
+        "WRITING": 5,
+        "EXPERIMENT": 2,
+        "SEMINAR": 1
+    }
+}
+```
+
+---
+
 ## Research Context
 
-This system was built to support PhD research in **AI and Cyber Forensics**, with a focus on the following research pillars:
+This system was built to support PhD research in **AI and Cyber Forensics**, with a focus on the following open research questions:
 
 - How do you forensically attribute an attack when the attacker used an AI system to execute it?
-- Can LLM-generated artifacts be forensically distinguished from human-written ones?
+- Can LLM-generated artefacts be forensically distinguished from human-written ones?
 - Can you fingerprint which AI model was used in an attack?
 - What is the legal framework for AI-assisted crime attribution?
 - Can AI forensic tools out-think AI attack tools?
 
-The learning tracker serves as both a productivity tool and a live map of the researcher's knowledge density across these domains.
+The learning tracker serves as both a productivity tool and a live map of the researcher's **knowledge density** across these domains — surfacing which pillars are deeply consolidated, which carry persistent gaps, and which need retrieval-spaced review before the next research sprint.
 
 ---
 
 ## Roadmap
 
-- [ ] Authentication (JWT)
-- [ ] Mobile responsive view
+### Theory-Grounded Extensions
+
+- [ ] `forgetting_decay` field — apply `R = e^(−t/S)` to `Kg` scores retroactively (Ebbinghaus)
+- [ ] Spaced repetition scheduler — surface sessions due for REVIEW at optimal intervals per pillar
+- [ ] `Rq` auto-scoring — DOI lookup against Crossref / Semantic Scholar for source credibility tier
+- [ ] `Cl` growth curve — plot concept link velocity per pillar to confirm expertise development
+- [ ] Expertise reversal detector — flag pillars where worked-example sessions are raising `Kg`
+
+### Engineering Extensions
+
+- [ ] JWT multi-user authentication
+- [ ] Mobile-responsive dashboard view
 - [ ] Export sessions to PDF / CSV
-- [ ] Weekly efficiency reports
+- [ ] Weekly efficiency reports with pillar heatmap
 - [ ] Literature reference linking per session
+- [ ] Pearson correlation: `Cl` vs `Le` across pillars
+- [ ] Predictive efficiency forecasting (linear regression / ML)
 - [ ] Deploy to production (Railway / Render)
+- [ ] Dockerized deployment
 
 ---
 
-## License
+## References
 
-MIT License — open for academic and research use.
+| Theory | Citation |
+|--------|---------|
+| Cognitive Load Theory | Sweller, J. (1988). Cognitive load during problem solving. *Cognitive Science, 12*(2), 257–285 |
+| Forgetting Curve | Ebbinghaus, H. (1885). *Über das Gedächtnis*. Leipzig: Duncker & Humblot |
+| Desirable Difficulties | Bjork, R.A. (1994). Memory and metamemory considerations in the training of human beings. In *Metacognition* |
+| Testing Effect | Roediger, H.L. & Karpicke, J.D. (2006). Test-enhanced learning. *Psychological Science, 17*(3), 249–255 |
+| h-index | Hirsch, J.E. (2005). An index to quantify an individual's scientific research output. *PNAS, 102*(46) |
+| Eigenfactor | Bergstrom, C.T. (2007). Eigenfactor: Measuring the value and prestige of scholarly journals. *C&RL News* |
+| Altmetrics | Priem, J. et al. (2010). Altmetrics: A manifesto. *altmetrics.org* |
+| Expertise Reversal | Kalyuga, S. et al. (2003). The expertise reversal effect. *Educational Psychologist, 38*(1), 23–31 |
 
 ---
 
-> *"The best research is the kind you can measure."*
+<sub>Built by <a href="https://github.com/mngugi">@mngugi</a> · PhD Candidate · AI & Cyber Forensics · Learning Science × Software Engineering</sub>
+
+---
+
+> *"The best research is the kind you can measure — and the best measurement is the kind that teaches you what to do next."*
