@@ -22,9 +22,9 @@ The architecture is grounded in three peer-reviewed learning science frameworks,
 
 | Theory | Author | Year | Variable Contributed |
 |--------|--------|------|---------------------|
-| **Cognitive Load Theory** | John Sweller | 1988 | `Kg` — cognitive overhead at session time |
-| **Ebbinghaus Forgetting Curve** | Hermann Ebbinghaus | 1885 | `Ts` — time-on-task relative to retention decay |
-| **Bibliometric Credibility Weighting** | Hirsch, Garfield et al. | 1955–2005 | `Rq` — source quality weighting per session |
+| **Cognitive Load Theory** | John Sweller | 1988 | `Kg` — Cognitive sverhead at session time |
+| **Ebbinghaus Forgetting Curve** | Hermann Ebbinghaus | 1885 | `Ts` — Time-on-task relative to retention decay |
+| **Bibliometric Credibility Weighting** | Hirsch, Garfield et al. | 1955–2005 | `Rq` — Source quality weighting per session |
 
 ---
 
