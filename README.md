@@ -266,7 +266,8 @@ Conditions that feel harder during study produce more durable learning:
 ### Further Reading
 
 **Theory 2: The Ebbinghaus Forgetting Curve**
-Hermann Ebbinghaus (1880s–1885) ran the first rigorous experiments on memory — on himself, memorising thousands of nonsense syllables. What he discovered was unsettling: without reinforcement, memory decays in a predictable, rapid curve.
+
+- Hermann Ebbinghaus (1880s–1885) ran the first rigorous experiments on memory — on himself, memorising thousands of nonsense syllables. What he discovered was unsettling: without reinforcement, memory decays in a predictable, rapid curve.
 
 ![image1](image1.png)
 
@@ -371,6 +372,24 @@ Modern tools have moved beyond citation counts toward **semantic credibility** �
 | Lens.org | Open citation graph | Full metadata + patent citations |
 
 > **Roadmap implication:** The planned `literature_reference_linking` feature will pull DOI-level credibility scores from Crossref and Semantic Scholar APIs — automatically assigning source tier weights to `Rq` values without manual entry.
+
+### Further Reading 
+
+**Theory 3: Research Quality Indexing — Bibliometric Credibility Weighting**
+
+- This is the most applied of the three — it asks: how do we measure the quality and influence of academic work?
+Bibliometrics is the quantitative analysis of publications, citations, and their networks. Let's build up from primitives.
+
+![Image3](bibliometric_credibility_framework.svg)
+
+**Level 1 — Raw counts:** The most naive measure. More citations = more influential. Problem: a paper published in 1980 naturally has more citations than one from 2022, and a biology paper will always have more citations than a mathematics paper (different field norms).
+
+**Level 2 — Normalised indices:** The h-index (Hirsch, 2005) balances breadth and depth — an h-index of 20 means 20 papers each cited at least 20 times. It resists gaming via a single viral paper. Field normalisation divides a paper's citation count by the average for that field and year.
+
+**Level 3 — Network measures:** Eigenfactor and PageRank treat citations like votes, but weight votes from high-influence journals more heavily (the same logic Google uses for web pages). Co-citation analysis maps the structure of knowledge — papers cited together are likely about the same topic, revealing invisible intellectual communities.
+
+**Advanced credibility weighting combines multiple signals:** journal tier (SCImago quartile ranking), citation velocity (is this paper gaining or losing influence?), retraction status, replication success rates, funding source disclosure, and altmetrics. Systematic review tools like Rayyan and platforms like Scite.ai now use AI to classify whether citing papers support, contradict, or merely mention a claim — moving beyond raw counts toward semantic credibility
+
 
 ---
 
