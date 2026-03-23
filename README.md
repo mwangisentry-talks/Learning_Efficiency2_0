@@ -78,7 +78,7 @@ Efficiency % = (Le / Max Efficiency) × 100
 
 Working memory is the bottleneck of all learning. It holds approximately **4 chunks** of information at a time, for only seconds to minutes. Every piece of knowledge — every schema about AI forensic attribution, adversarial ML, or legal frameworks — must be built through this narrow channel.
 
-```
+
 ┌─────────────────────────────────────────────────────────────────────┐
 │                          WORKING MEMORY                             │
 │                     (~4 slots · seconds to minutes)                 │
@@ -97,6 +97,7 @@ Working memory is the bottleneck of all learning. It holds approximately **4 chu
 │  via prerequisites │                    │                           │
 └────────────────────┴────────────────────┴───────────────────────────┘
    Total Load = Intrinsic + Extraneous + Germane ≤ Working Memory Capacity
+
 ```
 
 #### How `Kg` and `Cl` Map to This Model
