@@ -88,7 +88,7 @@ Working memory is the bottleneck of all learning. It holds approximately **4 chu
 │  Complexity of the │  Caused by poor    │  Schema-building effort   │
 │  material itself   │  presentation,     │  — the GOAL of all        │
 │                    │  split attention,  │  research sessions        │
-│  e.g. understanding│  redundancy,       │                           │
+│ e.g., understanding│  redundancy,       │                           │
 │  LLM fingerprinting│  unclear sources   │  e.g. connecting LLM      │
 │  is inherently     │                    │  forensics to legal       │
 │  high-intrinsic    │  Eliminate this    │  attribution frameworks   │
@@ -154,7 +154,7 @@ Late PhD (expert):
 
 At its core, this theory asks: why do people struggle to learn even when they're trying hard? John Sweller answered that the problem isn't motivation — it's mental bandwidth.
 
-                     ![When overloaded → learning stops](swellers1.png)
+![When overloaded → learning stops](swellers1.png)
 
 ---
 
