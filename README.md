@@ -270,9 +270,17 @@ Hermann Ebbinghaus (1880s–1885) ran the first rigorous experiments on memory �
 
 ![image1](image1.png)
 
-- After 1 day without review, roughly 56% of new material is forgotten. After a week, ~77% is gone.
+---
 
-![Green dots mark review sessions. Each review resets and strengthens the curve — the same material becomes progressively harder to forget.](image2.png)
+![image2](image2.png)
+
+
+- The curve isn't just steep — it's fast. Most forgetting happens within the first hour. By day six, only a quarter of unreviewed material survives.
+
+**What Ebbinghaus also discovered:** each time you successfully retrieve a memory, the subsequent forgetting curve becomes shallower. This is the basis of spaced repetition — reviewing material at increasing intervals just before you forget it.
+The mathematical form he proposed: R = e^(−t/S) where R = retention, t = time, S = memory stability (which grows with each review). Modern systems like Anki and SuperMemo are direct descendants of this formula.
+
+**Advanced layers:** Ebbinghaus's model was refined into desirable difficulties theory (Bjork, 1994) — retrieval practice, interleaving, and spacing all feel harder but produce more durable learning. The distinction between storage strength (how well consolidated a memory is) and retrieval strength (how accessible it is right now) explains why cramming can feel effective but fades fast. The testing effect (Roediger & Karpicke, 2006) showed that a test is a more powerful learning event than a second reading — because retrieval, not re-exposure, is what cements memory.
 
 
 ---
