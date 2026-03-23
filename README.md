@@ -74,6 +74,8 @@ Efficiency % = (Le / Max Efficiency) × 100
 
 **Why it matters here:** The variables `Kg` (Knowledge Gaps) and `Cl` (Concept Links) are direct operationalisations of Sweller's three-load model. Every research session generates a cognitive load profile — and this system captures it.
 
+![When overloaded → learning stops](swellers1.png)
+
 #### The Architecture of Working Memory
 
 Working memory is the bottleneck of all learning. It holds approximately **4 chunks** of information at a time, for only seconds to minutes. Every piece of knowledge — every schema about AI forensic attribution, adversarial ML, or legal frameworks — must be built through this narrow channel.
