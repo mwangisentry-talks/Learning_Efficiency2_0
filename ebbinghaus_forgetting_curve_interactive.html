@@ -1,0 +1,68 @@
+
+<div style="padding:1rem 0">
+<div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:1rem">
+  <button onclick="setMode('forget')" id="btn-forget" style="font-size:13px;padding:6px 14px;border-radius:var(--border-radius-md);border:1.5px solid var(--color-border-primary);background:var(--color-background-info);color:var(--color-text-info);cursor:pointer">Forgetting only</button>
+  <button onclick="setMode('spaced')" id="btn-spaced" style="font-size:13px;padding:6px 14px;border-radius:var(--border-radius-md);border:0.5px solid var(--color-border-tertiary);background:transparent;color:var(--color-text-secondary);cursor:pointer">With spaced repetition</button>
+</div>
+<div style="position:relative;width:100%;height:300px">
+  <canvas id="memChart"></canvas>
+</div>
+<p id="insight" style="font-size:13px;color:var(--color-text-secondary);margin-top:0.75rem;line-height:1.6">After 1 day without review, roughly 56% of new material is forgotten. After a week, ~77%.</p>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<script>
+const labels = ['0h','20min','1h','9h','1d','2d','6d','31d'];
+const decay = [100, 58, 44, 36, 33, 28, 25, 21];
+const spaced = [100, 58, 44, 36, 60, 52, 65, 80];
+const reviews = [false,false,false,false,true,false,true,true];
+
+let chart;
+function makeChart(data, showReviews) {
+  if(chart) chart.destroy();
+  const ctx = document.getElementById('memChart').getContext('2d');
+  const datasets = [{
+    label: 'Memory retention %',
+    data: data,
+    borderColor: '#185FA5',
+    backgroundColor: 'rgba(24,95,165,0.08)',
+    fill: true,
+    tension: 0.4,
+    pointRadius: data.map((_,i)=> showReviews && reviews[i] ? 8 : 4),
+    pointBackgroundColor: data.map((_,i)=> showReviews && reviews[i] ? '#1D9E75' : '#185FA5'),
+    pointBorderColor: data.map((_,i)=> showReviews && reviews[i] ? '#1D9E75' : '#185FA5'),
+  }];
+  chart = new Chart(ctx, {
+    type:'line',
+    data:{ labels, datasets },
+    options:{
+      responsive:true, maintainAspectRatio:false,
+      plugins:{ legend:{display:false}, tooltip:{
+        callbacks:{ label: ctx => `Retention: ${ctx.raw}%` }
+      }},
+      scales:{
+        y:{ min:0, max:105, ticks:{callback:v=>v+'%', font:{size:12}}, grid:{color:'rgba(128,128,128,0.1)'}},
+        x:{ ticks:{font:{size:12}}, grid:{color:'rgba(128,128,128,0.1)'}}
+      }
+    }
+  });
+}
+
+let mode = 'forget';
+function setMode(m) {
+  mode = m;
+  document.getElementById('btn-forget').style.background = m==='forget' ? 'var(--color-background-info)' : 'transparent';
+  document.getElementById('btn-forget').style.color = m==='forget' ? 'var(--color-text-info)' : 'var(--color-text-secondary)';
+  document.getElementById('btn-forget').style.borderWidth = m==='forget' ? '1.5px' : '0.5px';
+  document.getElementById('btn-spaced').style.background = m==='spaced' ? 'var(--color-background-info)' : 'transparent';
+  document.getElementById('btn-spaced').style.color = m==='spaced' ? 'var(--color-text-info)' : 'var(--color-text-secondary)';
+  document.getElementById('btn-spaced').style.borderWidth = m==='spaced' ? '1.5px' : '0.5px';
+  if(m==='forget') {
+    makeChart(decay, false);
+    document.getElementById('insight').textContent = 'After 1 day without review, roughly 56% of new material is forgotten. After a week, ~77% is gone.';
+  } else {
+    makeChart(spaced, true);
+    document.getElementById('insight').textContent = 'Green dots mark review sessions. Each review resets and strengthens the curve — the same material becomes progressively harder to forget.';
+  }
+}
+setMode('forget');
+</script>
