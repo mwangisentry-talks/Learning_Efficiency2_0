@@ -263,6 +263,14 @@ Conditions that feel harder during study produce more durable learning:
 > **Roadmap implication:** The planned `forgetting_decay` field will apply `R = e^(−t/S)` retroactively to `Kg` scores — adjusting historical sessions to reflect true retained knowledge, not just what was scored at session time.
 
 ---
+### Further Reading
+
+**Theory 2: The Ebbinghaus Forgetting Curve**
+Hermann Ebbinghaus (1880s–1885) ran the first rigorous experiments on memory — on himself, memorising thousands of nonsense syllables. What he discovered was unsettling: without reinforcement, memory decays in a predictable, rapid curve.
+
+![](ebbinghaus_forgetting_curve_interactive.html)
+
+---
 
 ### Theory 3 · Bibliometric Credibility Weighting
 
