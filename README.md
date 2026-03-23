@@ -148,6 +148,14 @@ Late PhD (expert):
 
 ---
 
+**Further Reading**
+
+**Theory 1: Cognitive Load Theory — Sweller (1988)**
+
+At its core, this theory asks: why do people struggle to learn even when they're trying hard? John Sweller answered that the problem isn't motivation — it's mental bandwidth.
+
+---
+
 ### Theory 2 · Ebbinghaus Forgetting Curve (1885)
 
 **Why it matters here:** `Ts` (Time Spent) is not a neutral input. Its value depends critically on *when* in the forgetting curve a session occurs. Two hours of review on day 1 and two hours on day 30 are not equivalent — the second is exponentially more consolidating.
