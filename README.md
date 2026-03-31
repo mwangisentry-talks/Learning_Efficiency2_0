@@ -830,23 +830,21 @@ It's elegant because it simultaneously rewards productivity and impact — you c
 The problem with raw citation counts is that citation norms vary wildly across fields. A paper in cell biology attracting 200 citations is unremarkable; the same count in mathematics or pure philosophy would be extraordinary. This is where field normalisation comes in.
 The standard approach is to compute a Field-Weighted Citation Impact (FWCI) or similar normalised indicator:
 
-`FWCI = (actual citations) ÷ (expected citations for papers of the same type, year, and field)`
+`FWCI = (actual citations) ÷ (expected citations for papers of the same type, year, and field).`
 
 A score of 1.0 is exactly average; 2.0 means twice as cited as expected; 0.5 means half. This allows meaningful comparisons across disciplines.
-Credibility weighting pipelines in practice combine several signals — the h-index, FWCI, journal impact factor (with caveats), co-citation networks, and increasingly, altmetrics. Each is imperfect:
 
-The h-index penalises early-career researchers and is hard to compare across career stages
-FWCI depends on how "field" is defined;  a narrow field definition flatters specialists
-Journal impact factors aggregate journal-level data onto individual papers (the "journal prestige transfer" fallacy)
-Self-citation inflation is a known gaming vector
+**Credibility weighting pipelines** in practice combine several signals — the h-index, FWCI, journal impact factor (with caveats), co-citation networks, and increasingly, altmetrics. Each is imperfect:
+
+- The h-index penalises early-career researchers and is hard to compare across career stages
+- FWCI depends on how "field" is defined;  a narrow field definition flatters specialists
+- Journal impact factors aggregate journal-level data onto individual papers (the "journal prestige transfer" fallacy)
+- Self-citation inflation is a known gaming vector
 
 Modern systems like Scopus's CiteScore, Web of Science's InCites, and scite.ai's "smart citations" (which distinguish supporting vs. contradicting citations) try to address these limitations.
-  ::view-transition-group(*),
-  ::view-transition-old(*),
-  ::view-transition-new(*) {
-    animation-duration: 0.25s;
-    animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
-  }
+
+![(bibliometric_credibility_framework.svg)]
+  
 Visualize the show_widgetKey design choices in modern weighting systems:
 Normalisation windows. FWCI is typically computed over a 3-year citation window (the year of publication plus two following years), because this stabilises cross-field comparisons. Fast-moving fields like genomics accumulate citations quickly, while theory-heavy fields may take a decade to peak.
 Percentile-based approaches are often preferred to raw ratios. Saying a paper is "in the top 10% of its field-year cohort" is more robust than a ratio that can explode when expected citations are very small (as they are in many humanities subfields).
