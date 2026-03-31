@@ -843,7 +843,7 @@ A score of 1.0 is exactly average; 2.0 means twice as cited as expected; 0.5 mea
 
 Modern systems like Scopus's CiteScore, Web of Science's InCites, and scite.ai's "smart citations" (which distinguish supporting vs. contradicting citations) try to address these limitations.
 
-![(bibliometric_credibility_framework.svg)]
+![Image](bibliometric_credibility_framework.svg)
   
 Visualize the show_widgetKey design choices in modern weighting systems:
 Normalisation windows. FWCI is typically computed over a 3-year citation window (the year of publication plus two following years), because this stabilises cross-field comparisons. Fast-moving fields like genomics accumulate citations quickly, while theory-heavy fields may take a decade to peak.
