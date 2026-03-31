@@ -843,13 +843,18 @@ A score of 1.0 is exactly average; 2.0 means twice as cited as expected; 0.5 mea
 
 Modern systems like Scopus's CiteScore, Web of Science's InCites, and scite.ai's "smart citations" (which distinguish supporting vs. contradicting citations) try to address these limitations.
 
+- Visualize the show_widgetKey design choices in modern weighting systems:
+
 ![Image](biblioticImage.png)
   
-Visualize the show_widgetKey design choices in modern weighting systems:
-Normalisation windows. FWCI is typically computed over a 3-year citation window (the year of publication plus two following years), because this stabilises cross-field comparisons. Fast-moving fields like genomics accumulate citations quickly, while theory-heavy fields may take a decade to peak.
-Percentile-based approaches are often preferred to raw ratios. Saying a paper is "in the top 10% of its field-year cohort" is more robust than a ratio that can explode when expected citations are very small (as they are in many humanities subfields).
-Co-citation and bibliographic coupling go beyond simple counts — they ask who else cites the papers that cite you, building a network-level view of intellectual influence that is harder to manipulate than raw citation counts.
-The San Francisco Declaration on Research Assessment (DORA, 2012) and the Leiden Manifesto (2015) are the two most influential frameworks arguing for the responsible use of these indicators — both warn against using any single metric as a proxy for research quality and emphasise that context always matters.
+
+- Normalisation windows. FWCI is typically computed over a 3-year citation window (the year of publication plus two following years), because this stabilises cross-field comparisons. Fast-moving fields like genomics accumulate citations quickly, while theory-heavy fields may take a decade to peak.
+  
+- Percentile-based approaches are often preferred to raw ratios. Saying a paper is "in the top 10% of its field-year cohort" is more robust than a ratio that can explode when expected citations are very small (as they are in many humanities subfields).
+  
+- Co-citation and bibliographic coupling go beyond simple counts — they ask who else cites the papers that cite you, building a network-level view of intellectual influence that is harder to manipulate than raw citation counts.
+  
+- The San Francisco Declaration on Research Assessment (DORA, 2012) and the Leiden Manifesto (2015) are the two most influential frameworks arguing for the responsible use of these indicators — both warn against using any single metric as a proxy for research quality and emphasise that context always matters.
 
 ---
 
