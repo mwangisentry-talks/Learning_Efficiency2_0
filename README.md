@@ -1,6 +1,6 @@
 # 🧠 Learning Efficiency Tracker 2.0
 
-> A PhD research intelligence system for tracking, measuring, and optimising learning sessions across AI & Cyber Forensics research domains — built on three interlocking theories of how humans acquire, retain, and evaluate knowledge.
+> A PhD research intelligence system for tracking, measuring, and optimising learning sessions across AI & Cyber Forensics research domains built on three interlocking theories of how humans acquire, retain, and evaluate knowledge.
 
 [![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=flat-square&logo=python&logoColor=white)](https://python.org)
 [![Django](https://img.shields.io/badge/Django-4.x-092E20?style=flat-square&logo=django&logoColor=white)](https://djangoproject.com)
