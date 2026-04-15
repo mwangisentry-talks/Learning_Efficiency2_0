@@ -155,7 +155,7 @@ Late PhD (expert):
 
 **Theory 1: Cognitive Load Theory — Sweller (1988)**
 
-At its core, this theory asks: why do people struggle to learn even when they're trying hard? John Sweller answered that the problem isn't motivation — it's mental bandwidth.
+At its core, this theory asks: why do people struggle to learn even when they're trying hard? John Sweller answered that the problem isn't motivation, it's mental bandwidth.
 
 ![When overloaded → learning stops](cognitive_load_theory_basics.svg)
 
@@ -165,7 +165,7 @@ Sweller identified three types of cognitive load that fill those slots:
 ![Total load = intrinsic + extraneous + germane ≤ working memory capacity](three_types_of_cognitive_load.svg)
 
 **The practical design goal:** reduce extraneous load to near zero so that whatever working memory capacity remains can be split between intrinsic load (unavoidable) and germane load (the actual learning).
-Advanced applications of CLT include the expertise reversal effect — worked examples help novices but actually hurt experts, because experts already have schemas and the extra guidance becomes noise. It also underpins split-attention effect (don't separate diagrams from their labels), redundancy effect (don't present the same info twice in different formats), and modality effect (voice + image uses two separate channels; text + image competes on one).
+Advanced applications of CLT include the expertise reversal effect,  which helps novices but actually hurts experts, because experts already have schemas, and the extra guidance becomes noise. It also underpins the split-attention effect (don't separate diagrams from their labels), redundancy effect (don't present the same info twice in different formats), and modality effect (voice + image uses two separate channels; text + image competes on one).
 
 
 ---
