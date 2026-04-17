@@ -417,16 +417,16 @@ The formula is not arbitrary. It is a compression of a three-way feedback loop:
 │                          ▼                                          │
 │   EBBINGHAUS                                                        │
 │   governs when to return                                            │
-│   → Kg logged today ≠ Kg retained in 6 days                        │
+│   → Kg logged today ≠ Kg retained in 6 days                         │
 │   → Ts invested now decays without REVIEW sessions                  │
-│   → spaced repetition raises S, protects Le over time              │
+│   → spaced repetition raises S, protects Le over time               │
 │                          │                                          │
-│                          └──────────────────────────────────────┐  │
+│                          └──────────────────────────────────────┐   │
 │                                                                  │  │
 │   MAXIMUM Le requires all three simultaneously:                  │  │
 │   credible sources (Bibliometrics) +                             │  │
 │   managed cognitive load (CLT) +                                 │  │
-│   retrieval-spaced sessions (Ebbinghaus)           ◄────────────┘  │
+│   retrieval-spaced sessions (Ebbinghaus)           ◄────────────┘   │
 │                                                                     │
 └─────────────────────────────────────────────────────────────────────┘
 ```
