@@ -200,7 +200,7 @@ Retention (R)
        └──────────────────────────────────────────────────▶  Time
          20min  1hr   9hr   1day  2days  6days  31days
 
-  Without intervention: ~77% of a session is forgotten within 6 days.
+  Without intervention, ~77% of a session is forgotten within 6 days.
 ```
 
 #### Spaced Repetition — The Optimal Review Schedule
