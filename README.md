@@ -88,7 +88,7 @@ Working memory is the bottleneck of all learning. It holds approximately **4 chu
 │   INTRINSIC LOAD   │  EXTRANEOUS LOAD   │      GERMANE LOAD         │
 │                    │                    │                           │
 │ Complexity of the  │  - Caused by poor    │  Schema-building effort   │
-│  material itself   │  presentation,     │  — the GOAL of all        │
+│  material itself   │  presentation,     │  - the GOAL of all        │
 │                    │  split attention,  │  research sessions        │
 │ e.g., understanding│  redundancy,       │                           │
 │  LLM fingerprinting│  unclear sources   │ ,  e.g., connecting LLM      │
