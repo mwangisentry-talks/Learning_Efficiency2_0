@@ -172,7 +172,7 @@ Advanced applications of CLT include the expertise reversal effect,  which helps
 
 ### Theory 2 · Ebbinghaus Forgetting Curve (1885)
 
-**Why it matters here:** `Ts` (Time Spent) is not a neutral input. Its value depends critically on *when* in the forgetting curve a session occurs. Two hours of review on day 1 and two hours on day 30 are not equivalent — the second is exponentially more consolidating.
+**Why it matters here:** `Ts` (Time Spent) is not a neutral input. Its value depends critically on *when* in the forgetting curve a session occurs. Two hours of review on day 1 and two hours on day 30 are not equivalent; the second is exponentially more consolidating.
 
 #### The Mathematics of Forgetting
 
@@ -185,7 +185,7 @@ $$
 Where:
 - `R` = memory retention (0.0 to 1.0)
 - `t` = time elapsed since last encoding or retrieval
-- `S` = memory stability — increases with each successful retrieval event
+- `S` = memory stability - increases with each successful retrieval event
 - `e` = Euler's number (~2.718)
 
 ```
@@ -279,17 +279,17 @@ Conditions that feel harder during study produce more durable learning:
 
 - The curve isn't just steep — it's fast. Most forgetting happens within the first hour. By day six, only a quarter of unreviewed material survives.
 
-**What Ebbinghaus also discovered:** each time you successfully retrieve a memory, the subsequent forgetting curve becomes shallower. This is the basis of spaced repetition — reviewing material at increasing intervals just before you forget it.
-The mathematical form he proposed: R = e^(−t/S) where R = retention, t = time, S = memory stability (which grows with each review). Modern systems like Anki and SuperMemo are direct descendants of this formula.
+**What Ebbinghaus also discovered:** Each time you successfully retrieve a memory, the subsequent forgetting curve becomes shallower. This is the basis of spaced repetition — reviewing material at increasing intervals just before you forget it.
+The mathematical form he proposed: R = e^(−t/S), where R = retention, t = time, and S = memory stability (which grows with each review). Modern systems like Anki and SuperMemo are direct descendants of this formula.
 
-**Advanced layers:** Ebbinghaus's model was refined into desirable difficulties theory (Bjork, 1994) — retrieval practice, interleaving, and spacing all feel harder but produce more durable learning. The distinction between storage strength (how well consolidated a memory is) and retrieval strength (how accessible it is right now) explains why cramming can feel effective but fades fast. The testing effect (Roediger & Karpicke, 2006) showed that a test is a more powerful learning event than a second reading — because retrieval, not re-exposure, is what cements memory.
+**Advanced layers:** Ebbinghaus's model was refined into desirable difficulties theory (Bjork, 1994) — retrieval practice, interleaving, and spacing all feel harder but produce more durable learning. The distinction between storage strength (how well consolidated a memory is) and retrieval strength (how accessible it is right now) explains why cramming can feel effective but fades fast. The testing effect (Roediger & Karpicke, 2006) showed that a test is a more powerful learning event than a second reading, because retrieval, not re-exposure, is what cements memory.
 
 
 ---
 
 ### Theory 3 · Bibliometric Credibility Weighting
 
-**Why it matters here:** `Rq` (Research Questions) is not simply a count — it is a **credibility-weighted** measure. An open question sourced from a Nature paper carries different epistemic weight than one from a forum post. This theory provides the framework for that weighting.
+**Why it matters here:** `Rq` (Research Questions) is not simply a count;  it is a **credibility-weighted** measure. An open question sourced from a Nature paper carries different epistemic weight than one from a forum post. This theory provides the framework for that weighting.
 
 #### The Credibility Hierarchy
 
@@ -363,7 +363,7 @@ Some pillars in this system are more citation-dense than others:
 
 #### The Semantic Turn in Bibliometrics
 
-Modern tools have moved beyond citation counts toward **semantic credibility** — classifying whether a citing paper *supports*, *contradicts*, or merely *mentions* a claim:
+Modern tools have moved beyond citation counts toward **semantic credibility** - classifying whether a citing paper *supports*, *contradicts*, or merely *mentions* a claim:
 
 | Platform | Method | Signal |
 |----------|--------|--------|
