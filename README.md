@@ -43,10 +43,10 @@ $$
 
 | Symbol | Variable | Range | Theoretical Grounding |
 |--------|----------|-------|-----------------------|
-| `Ts` | Time Spent (hours) | > 0 | Ebbinghaus — time-on-task relative to forgetting curve position |
-| `Cl` | Concept Links | ≥ 1 | Sweller — germane load output; schema connections formed |
-| `Kg` | Knowledge Gaps remaining | ≥ 1 | Sweller — intrinsic + extraneous load not yet resolved |
-| `Rq` | Research Questions open | ≥ 1 | Bibliometrics — open credibility-weighted questions remaining |
+| `Ts` | Time Spent (hours) | > 0 | **Ebbinghaus** - time-on-task relative to forgetting curve position |
+| `Cl` | Concept Links | ≥ 1 | **Sweller** - germane load output; schema connections formed |
+| `Kg` | Knowledge Gaps remaining | ≥ 1 | **Sweller** - intrinsic + extraneous load not yet resolved |
+| `Rq` | Research Questions open | ≥ 1 | **Bibliometrics** - open credibility-weighted questions remaining |
 
 **Max Efficiency** — assumes all gaps and questions are resolved:
 ```
