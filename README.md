@@ -71,7 +71,7 @@ Efficiency % = (Le / Max Efficiency) × 100
 
 ## Theoretical Foundations
 
-### Theory 1 · Cognitive Load Theory — Sweller (1988)
+### Theory 1 · Cognitive Load Theory- Sweller (1988)
 
 **Why it matters here:** The variables `Kg` (Knowledge Gaps) and `Cl` (Concept Links) are direct operationalisations of Sweller's three-load model. Every research session generates a cognitive load profile — and this system captures it.
 
@@ -242,7 +242,7 @@ Retrieval practice is more powerful than re-reading. A `REVIEW` session that inv
 
 ```
 Passive re-reading of a paper:        Kg drops slowly, Cl rises slowly
-Active retrieval (REVIEW session):    Kg drops sharply short-term,
+Active retrieval (REVIEW session):    Kg drops sharply in the short term,
                                       but true S increases significantly
 
 → Short-term Le score may be lower for REVIEW sessions
