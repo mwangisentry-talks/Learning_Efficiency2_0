@@ -73,11 +73,11 @@ Efficiency % = (Le / Max Efficiency) × 100
 
 ### Theory 1 · Cognitive Load Theory- Sweller (1988)
 
-**Why it matters here:** The variables `Kg` (Knowledge Gaps) and `Cl` (Concept Links) are direct operationalisations of Sweller's three-load model. Every research session generates a cognitive load profile — and this system captures it.
+**Why it matters here:** The variables `Kg` (Knowledge Gaps) and `Cl` (Concept Links) are direct operationalisations of Sweller's three-load model. Every research session generates a cognitive load profile, and this system captures it.
 
 #### The Architecture of Working Memory
 
-Working memory is the bottleneck of all learning. It holds approximately **4 chunks** of information at a time, for only seconds to minutes. Every piece of knowledge, every schema about AI forensic attribution, adversarial ML, or legal frameworks,must be built through this narrow channel.
+Working memory is the bottleneck of all learning. It holds approximately **4 chunks** of information at a time, for only seconds to minutes. Every piece of knowledge, every schema about AI forensic attribution, adversarial ML, or legal frameworks, must be built through this narrow channel.
 
 ```
 
@@ -106,7 +106,7 @@ Working memory is the bottleneck of all learning. It holds approximately **4 chu
 
 | API Field | Load Type | Interpretation |
 |-----------|-----------|----------------|
-| `concept_links` (high) | Germane | Schema formation is occurring — connections being built |
+| `concept_links` (high) | Germane | Schema formation is occurring,connections being built |
 | `knowledge_gaps` (low) | Intrinsic + Extraneous | Unresolved complexity is being managed |
 | `knowledge_gaps` (high) | Overload signal | Working memory exceeded; session should be split |
 | `recurring_gap = True` | Persistent intrinsic | A concept repeatedly exceeding capacity — needs prerequisite work |
