@@ -261,7 +261,7 @@ Conditions that feel harder during study produce more durable learning:
 | Retrieval practice | REVIEW, WRITING | Active recall > passive exposure |
 | Generation effect | EXPERIMENT, HYPOTHESIS | Generating answers > reading them |
 
-> **Roadmap implication:** The planned `forgetting_decay` field will apply `R = e^(−t/S)` retroactively to `Kg` scores — adjusting historical sessions to reflect true retained knowledge, not just what was scored at session time.
+> **Roadmap implication:** The planned `forgetting_decay` field will apply `R = e^(−t/S)` retroactively to `Kg` scores, adjusting historical sessions to reflect true retained knowledge, not just what was scored at session time.
 
 ---
 ### Further Reading
@@ -383,7 +383,7 @@ Bibliometrics is the quantitative analysis of publications, citations, and their
 
 ![Image3](bibliometric_credibility_framework.svg)
 
-**Level 1 — Raw counts:** The most naive measure. More citations = more influential. Problem: a paper published in 1980 naturally has more citations than one from 2022, and a biology paper will always have more citations than a mathematics paper (different field norms).
+**Level 1 — Raw counts:** The most naive measure. More citations = more influential. Problem: A paper published in 1980 naturally has more citations than one from 2022, and a biology paper will always have more citations than a mathematics paper (different field norms).
 
 **Level 2 — Normalised indices:** The h-index (Hirsch, 2005) balances breadth and depth — an h-index of 20 means 20 papers each cited at least 20 times. It resists gaming via a single viral paper. Field normalisation divides a paper's citation count by the average for that field and year.
 
@@ -646,7 +646,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
-    "corsheaders.middleware.CorsMiddleware",  # must be first
+    "corsheaders. middleware.CorsMiddleware",  # must be first
     ...
 ]
 
