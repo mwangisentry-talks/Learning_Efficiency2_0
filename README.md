@@ -153,7 +153,7 @@ Late PhD (expert):
 
 **Further Reading**
 
-**Theory 1: Cognitive Load Theory — Sweller (1988)**
+**Theory 1: Cognitive Load Theory, Sweller (1988)**
 
 At its core, this theory asks: why do people struggle to learn even when they're trying hard? John Sweller answered that the problem isn't motivation, it's mental bandwidth.
 
@@ -268,7 +268,7 @@ Conditions that feel harder during study produce more durable learning:
 
 **Theory 2: The Ebbinghaus Forgetting Curve**
 
-- Hermann Ebbinghaus (1880s–1885) ran the first rigorous experiments on memory — on himself, memorising thousands of nonsense syllables. What he discovered was unsettling: without reinforcement, memory decays in a predictable, rapid curve.
+- Hermann Ebbinghaus (1880s–1885) ran the first rigorous experiments on memory, on himself, memorising thousands of nonsense syllables. What he discovered was unsettling: without reinforcement, memory decays in a predictable, rapid curve.
 
 ![image1](image1.png)
 
@@ -277,12 +277,12 @@ Conditions that feel harder during study produce more durable learning:
 ![image2](image2.png)
 
 
-- The curve isn't just steep — it's fast. Most forgetting happens within the first hour. By day six, only a quarter of unreviewed material survives.
+- The curve isn't just steep, it's fast. Most forgetting happens within the first hour. By day six, only a quarter of unreviewed material survives.
 
-**What Ebbinghaus also discovered:** Each time you successfully retrieve a memory, the subsequent forgetting curve becomes shallower. This is the basis of spaced repetition — reviewing material at increasing intervals just before you forget it.
-The mathematical form he proposed: R = e^(−t/S), where R = retention, t = time, and S = memory stability (which grows with each review). Modern systems like Anki and SuperMemo are direct descendants of this formula.
+**What Ebbinghaus also discovered:** Each time you successfully retrieve a memory, the subsequent forgetting curve becomes shallower. This is the basis of spaced repetition reviewing material at increasing intervals just before you forget it.
+The mathematical form he proposed: R - e^(−t/S), where R = retention, t = time, and S = memory stability (which grows with each review). Modern systems like Anki and SuperMemo are direct descendants of this formula.
 
-**Advanced layers:** Ebbinghaus's model was refined into desirable difficulties theory (Bjork, 1994) — retrieval practice, interleaving, and spacing all feel harder but produce more durable learning. The distinction between storage strength (how well consolidated a memory is) and retrieval strength (how accessible it is right now) explains why cramming can feel effective but fades fast. The testing effect (Roediger & Karpicke, 2006) showed that a test is a more powerful learning event than a second reading, because retrieval, not re-exposure, is what cements memory.
+**Advanced layers:** Ebbinghaus's model was refined into desirable difficulties theory (Bjork, 1994), retrieval practice, interleaving, and spacing, all of which feel harder but produce more durable learning. The distinction between storage strength (how well consolidated a memory is) and retrieval strength (how accessible it is right now) explains why cramming can feel effective but fades fast. The testing effect (Roediger & Karpicke, 2006) showed that a test is a more powerful learning event than a second reading, because retrieval, not re-exposure, is what cements memory.
 
 
 ---
@@ -294,7 +294,7 @@ The mathematical form he proposed: R = e^(−t/S), where R = retention, t = time
 #### The Credibility Hierarchy
 
 ```
-Level 3 — Network Measures  (most sophisticated)
+Level 3: Network Measures  (most sophisticated)
 ┌──────────────────────┬─────────────────────┬─────────────────────┐
 │  Eigenfactor /       │  Co-citation        │  Altmetrics         │
 │  PageRank            │  Analysis           │                     │
@@ -304,7 +304,7 @@ Level 3 — Network Measures  (most sophisticated)
 │  not just HOW MANY   │  knowledge clusters │  = real-world impact│
 └──────────────────────┴─────────────────────┴─────────────────────┘
          ▲                      ▲                      ▲
-Level 2 — Normalised Indices
+Level 2: Normalised Indices
 ┌──────────────────────┬─────────────────────┬─────────────────────┐
 │  h-index             │  i10-index          │  Field-normalised   │
 │  (Hirsch, 2005)      │                     │  citation score     │
@@ -313,7 +313,7 @@ Level 2 — Normalised Indices
 │  ≥ h times           │  citations          │  & year average     │
 └──────────────────────┴─────────────────────┴─────────────────────┘
          ▲                      ▲                      ▲
-Level 1 — Raw Counts
+Level 1 Raw Counts
 ┌──────────────────────┬─────────────────────┬─────────────────────┐
 │  Citation count      │  Impact factor      │  Publication count  │
 │  Times cited         │  Journal-level      │  Total output       │
