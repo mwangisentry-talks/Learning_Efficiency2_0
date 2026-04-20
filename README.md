@@ -48,12 +48,12 @@ $$
 | `Kg` | Knowledge Gaps remaining | ≥ 1 | **Sweller** - intrinsic + extraneous load not yet resolved |
 | `Rq` | Research Questions open | ≥ 1 | **Bibliometrics** - open credibility-weighted questions remaining |
 
-**Max Efficiency** — assumes all gaps and questions are resolved:
+**Max Efficiency**: assumes all gaps and questions are resolved:
 ```
 Max Efficiency = (Ts × Cl) / (1 × 1)
 ```
 
-**Efficiency Percentage** — how close the session reached its own theoretical maximum:
+**Efficiency Percentage**: how close the session reached its own theoretical maximum:
 ```
 Efficiency % = (Le / Max Efficiency) × 100
 ```
