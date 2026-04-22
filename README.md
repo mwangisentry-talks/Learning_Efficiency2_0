@@ -238,7 +238,7 @@ Research Pillar Scheduling (recommended):
 
 #### The Testing Effect (Roediger & Karpicke, 2006)
 
-Retrieval practice is more powerful than re-reading. A `REVIEW` session that involves active recall produces higher true knowledge retention than a `PAPER` session of the same duration — even when the immediate subjective score feels lower.
+Retrieval practice is more powerful than re-reading. A `REVIEW` session that involves active recall produces higher true knowledge retention than a `PAPER` session of the same duration, even when the immediate subjective score feels lower.
 
 ```
 Passive re-reading of a paper:        Kg drops slowly, Cl rises slowly
@@ -317,7 +317,7 @@ Level 1 Raw Counts
 ┌──────────────────────┬─────────────────────┬─────────────────────┐
 │  Citation count      │  Impact factor      │  Publication count  │
 │  Times cited         │  Journal-level      │  Total output       │
-│  by others           │  average cites      │  volume             │
+│  by others'          │  average cites      │  volume             │
 └──────────────────────┴─────────────────────┴─────────────────────┘
 ```
 
@@ -385,7 +385,7 @@ Bibliometrics is the quantitative analysis of publications, citations, and their
 
 **Level 1 — Raw counts:** The most naive measure. More citations = more influential. Problem: A paper published in 1980 naturally has more citations than one from 2022, and a biology paper will always have more citations than a mathematics paper (different field norms).
 
-**Level 2 — Normalised indices:** The h-index (Hirsch, 2005) balances breadth and depth — an h-index of 20 means 20 papers each cited at least 20 times. It resists gaming via a single viral paper. Field normalisation divides a paper's citation count by the average for that field and year.
+**Level 2 — Normalised indices:** The h-index (Hirsch, 2005) balances breadth and depth. An h-index of 20 means 20 papers each cited at least 20 times. It resists gaming via a single viral paper. Field normalisation divides a paper's citation count by the average for that field and year.
 
 **Level 3 — Network measures:** Eigenfactor and PageRank treat citations like votes, but weight votes from high-influence journals more heavily (the same logic Google uses for web pages). Co-citation analysis maps the structure of knowledge — papers cited together are likely about the same topic, revealing invisible intellectual communities.
 
@@ -465,7 +465,7 @@ Same 3 hours. Very different knowledge output.
 | Frontend | React 18 + Vite | Live dashboard |
 | Charts | Recharts | Efficiency visualisation |
 | Routing | React Router DOM | Dashboard navigation |
-| Styling | Custom CSS (terminal / forensics aesthetic) | Research-grade UI |
+| Styling | Custom CSS (terminal/forensics aesthetic) | Research-grade UI |
 
 ---
 
