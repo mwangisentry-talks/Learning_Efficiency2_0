@@ -147,7 +147,7 @@ Late PhD (expert):
   (explicit guidance becomes redundant noise for expert schemas)
 ```
 
-> **System implication:** Track `Cl/Kg` ratio across time. A rising ratio on the same pillar confirms genuine expertise development — one of the most valuable signals in this tracker.
+> **System implication:** Track `Cl/Kg` ratio across time. A rising ratio on the same pillar confirms genuine expertise development, one of the most valuable signals in this tracker.
 
 ---
 
@@ -300,7 +300,7 @@ Level 3: Network Measures  (most sophisticated)
 │  PageRank            │  Analysis           │                     │
 │                      │                     │                     │
 │  Weight citations    │  Papers cited       │  Policy, media,     │
-│  by WHO is citing    │  together reveal    │  social mentions    │
+│  by WHO is citing    │  together reveals    │  social mentions    │
 │  not just HOW MANY   │  knowledge clusters │  = real-world impact│
 └──────────────────────┴─────────────────────┴─────────────────────┘
          ▲                      ▲                      ▲
