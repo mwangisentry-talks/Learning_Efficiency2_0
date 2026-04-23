@@ -434,7 +434,7 @@ The formula is not arbitrary. It is a compression of a three-way feedback loop:
 **Practical example from the AI Forensics pillar:**
 
 ```
-Session A — Poor theoretical practice
+Session A: Poor theoretical practice
   title:      "LLM attribution — blog survey"
   Ts:         3.0 hrs
   Cl:         2    (few connections formed)
