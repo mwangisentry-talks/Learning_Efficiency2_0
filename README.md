@@ -443,8 +443,8 @@ Session A: Poor theoretical practice
   Rq:         8    (unweighted open questions from informal sources)
   Le:         3.0 / 72  =  0.08   →  Needs Work
 
-Session B — Theory-aligned practice
-  title:      "LLM attribution — IEEE Trans. review"
+Session B: Theory-aligned practice
+  title:      "LLM attribution IEEE Trans. review"
   Ts:         3.0 hrs
   Cl:         8    (Tier 1 paper connected to 3 existing pillar schemas)
   Kg:         2    (most gaps resolved by high-credibility sourcing)
@@ -506,7 +506,7 @@ Learning_Efficiency2.0/
 
 ## Data Models
 
-### LearningRecord
+### Learning Record
 Represents a single study session with full CLT + Ebbinghaus instrumentation.
 
 | Field | Type | Description | Theory Link |
@@ -537,7 +537,7 @@ Top-level research domains. Bibliometric credibility context varies per pillar.
 | AI Attack Attribution | `ATTRIBUTION` | Emerging — preprints |
 | Tools & Methodology | `TOOLS_METHODS` | Mixed |
 
-### KnowledgeGapTracker
+### Knowledge Gap Tracker
 Tracks recurring knowledge gaps across sessions — the persistent intrinsic load signal.
 
 | Field | Type | Description | Theory Link |
