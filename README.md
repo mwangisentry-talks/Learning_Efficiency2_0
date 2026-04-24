@@ -389,7 +389,7 @@ Bibliometrics is the quantitative analysis of publications, citations, and their
 
 **Level 3 — Network measures:** Eigenfactor and PageRank treat citations like votes, but weight votes from high-influence journals more heavily (the same logic Google uses for web pages). Co-citation analysis maps the structure of knowledge — papers cited together are likely about the same topic, revealing invisible intellectual communities.
 
-**Advanced credibility weighting combines multiple signals:** journal tier (SCImago quartile ranking), citation velocity (is this paper gaining or losing influence?), retraction status, replication success rates, funding source disclosure, and altmetrics. Systematic review tools like Rayyan and platforms like Scite.ai now use AI to classify whether citing papers support, contradict, or merely mention a claim — moving beyond raw counts toward semantic credibility
+**Advanced credibility weighting combines multiple signals:** journal tier (SCImago quartile ranking), citation velocity (is this paper gaining or losing influence?), retraction status, replication success rates, funding source disclosure, and altmetrics. Systematic review tools like Rayyan and platforms like Scite.ai now use AI to classify whether citing papers support, contradict, or merely mention a claim,  moving beyond raw counts toward semantic credibility
 
 
 ---
