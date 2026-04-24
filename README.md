@@ -159,7 +159,7 @@ At its core, this theory asks: why do people struggle to learn even when they're
 
 ![When overloaded → learning stops](cognitive_load_theory_basics.svg)
 
-**The key insight:** working memory is the bottleneck. It holds roughly 4 items at a time, and only for seconds. Long-term memory is vast, but must be reached through working memory. Learning = building schemas in long-term memory. If working memory fills up before schemas form, nothing sticks.
+**The key insight:** working memory is the bottleneck. It holds roughly 4 items at a time for only seconds. Long-term memory is vast, but must be reached through working memory. Learning = building schemas in long-term memory. If working memory fills up before schemas form, nothing sticks.
 Sweller identified three types of cognitive load that fill those slots:
 
 ![Total load = intrinsic + extraneous + germane ≤ working memory capacity](three_types_of_cognitive_load.svg)
