@@ -87,7 +87,7 @@ Working memory is the bottleneck of all learning. It holds approximately **4 chu
 ├────────────────────┬────────────────────┬───────────────────────────┤
 │   INTRINSIC LOAD   │  EXTRANEOUS LOAD   │      GERMANE LOAD         │
 │                    │                    │                           │
-│ Complexity of the  │  - Caused by poor    │  Schema-building effort │
+│ Complexity of the  │  - Caused by poor  │  Schema-building effort │
 │  material itself   │  presentation,     │  - the GOAL of all        │
 │                    │  split attention,  │  research sessions        │
 │ e.g., understanding│  redundancy,       │                           │
@@ -280,9 +280,9 @@ Conditions that feel harder during study produce more durable learning:
 - The curve isn't just steep, it's fast. Most forgetting happens within the first hour. By day six, only a quarter of unreviewed material survives.
 
 **What Ebbinghaus also discovered:** Each time you successfully retrieve a memory, the subsequent forgetting curve becomes shallower. This is the basis of spaced repetition reviewing material at increasing intervals just before you forget it.
-The mathematical form he proposed: R - e^(−t/S), where R = retention, t = time, and S = memory stability (which grows with each review). Modern systems like Anki and SuperMemo are direct descendants of this formula.
+The mathematical form he proposed: R = e^(- t/S), where R = retention, t = time, and S = memory stability (which increases with each review). Modern systems like Anki and SuperMemo are direct descendants of this formula.
 
-**Advanced layers:** Ebbinghaus's model was refined into desirable difficulties theory (Bjork, 1994), retrieval practice, interleaving, and spacing, all of which feel harder but produce more durable learning. The distinction between storage strength (how well consolidated a memory is) and retrieval strength (how accessible it is right now) explains why cramming can feel effective but fades fast. The testing effect (Roediger & Karpicke, 2006) showed that a test is a more powerful learning event than a second reading, because retrieval, not re-exposure, is what cements memory.
+**Advanced layers:** Ebbinghaus's model was refined into the desirable difficulties theory (Bjork, 1994), retrieval practice, interleaving, and spacing, all of which make learning feel harder but produce more durable learning. The distinction between storage strength (how well consolidated a memory is) and retrieval strength (how accessible it is right now) explains why cramming can feel effective but fades fast. The testing effect (Roediger & Karpicke, 2006) showed that a test is a more powerful learning event than a second reading, because retrieval, not re-exposure, is what cements memory.
 
 
 ---
@@ -300,7 +300,7 @@ Level 3: Network Measures  (most sophisticated)
 │  PageRank            │  Analysis           │                     │
 │                      │                     │                     │
 │  Weight citations    │  Papers cited       │  Policy, media,     │
-│  by WHO is citing    │  together reveals    │  social mentions    │
+│  by WHO is citing    │  together reveals    │  social mentions   │
 │  not just HOW MANY   │  knowledge clusters │  = real-world impact│
 └──────────────────────┴─────────────────────┴─────────────────────┘
          ▲                      ▲                      ▲
