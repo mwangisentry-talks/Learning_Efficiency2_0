@@ -330,13 +330,13 @@ Source Tier      Rq Weight   Bibliometric Signal
 ──────────────────────────────────────────────────────────────────────
 Tier 1 Journals  × 1.0       Q1 SCImago, Eigenfactor > 0.01,
                              field-normalised citation > 2.0
-                             e.g. IEEE Trans. Info. Forensics, USENIX
+                             e.g., IEEE Trans. Info. Forensics, USENIX
 
 Peer-reviewed    × 0.85      h-index authors, i10-index > 10,
 Conferences                  cited in systematic reviews
-                             e.g. ACM CCS, IEEE S&P, CVPR
+                             e.g., ACM CCS, IEEE S&P, CVPR
 
-Preprints        × 0.65      arXiv, SSRN — traceable, versioned,
+Preprints        × 0.65      arXiv, SSRN-traceable, versioned,
                              not yet peer-reviewed
 
 Grey Literature  × 0.45      NIST reports, ENISA guidelines,
