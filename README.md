@@ -203,7 +203,7 @@ Retention (R)
   Without intervention, ~77% of a session is forgotten within 6 days.
 ```
 
-#### Spaced Repetition — The Optimal Review Schedule
+#### Spaced Repetition: The Optimal Review Schedule
 
 Each successful retrieval flattens the next forgetting curve. Memory stability `S` grows with every review, meaning the same material becomes progressively harder to forget.
 
