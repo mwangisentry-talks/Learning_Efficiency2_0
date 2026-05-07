@@ -13,7 +13,7 @@
 ---
 ### Introduction
 
-Education systems in Sub-Saharan Africa face compounding challenges at the intersection of data governance, stakeholder communication, and equitable learning outcomes. In Kenya a country that processes nearly one million secondary school candidates annually through its national Kenya Certificate of Secondary Education (KCSE) examination systemic vulnerabilities have become increasingly visible. The 2023 examination cycle exposed serious data integrity failures, including incorrect index number allocations and mismatched student records, pointing to weaknesses across the data availability, confidentiality, and integrity (ACI) triad.
+Education systems in Sub-Saharan Africa face compounding challenges at the intersection of data governance, stakeholder communication, and equitable learning outcomes. In Kenya, a country that processes nearly one million secondary school candidates annually through its national Kenya Certificate of Secondary Education (KCSE) examination, systemic vulnerabilities have become increasingly visible. The 2023 examination cycle revealed serious data integrity failures, including incorrect index number allocations and mismatched student records, highlighting weaknesses across the data availability, confidentiality, and integrity (ACI) triad.
 
 Simultaneously, longitudinal analysis of KCSE performance reveals that approximately 48,000 students  roughly five per cent of all candidates have consistently received an E (fail) grade each year for at least nine consecutive years. This pattern is not random noise; it points to structural, behavioural, and environmental factors that conventional data management systems have failed to identify, let alone address.
 
