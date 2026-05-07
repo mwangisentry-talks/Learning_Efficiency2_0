@@ -11,6 +11,18 @@
 [![Status](https://img.shields.io/badge/Status-Active%20Research-FF6B35?style=flat-square)]()
 
 ---
+### Introduction
+
+Education systems in Sub-Saharan Africa face compounding challenges at the intersection of data governance, stakeholder communication, and equitable learning outcomes. In Kenya a country that processes nearly one million secondary school candidates annually through its national Kenya Certificate of Secondary Education (KCSE) examination systemic vulnerabilities have become increasingly visible. The 2023 examination cycle exposed serious data integrity failures, including incorrect index number allocations and mismatched student records, pointing to weaknesses across the data availability, confidentiality, and integrity (ACI) triad.
+
+Simultaneously, longitudinal analysis of KCSE performance reveals that approximately 48,000 students  roughly five per cent of all candidates have consistently received an E (fail) grade each year for at least nine consecutive years. This pattern is not random noise; it points to structural, behavioural, and environmental factors that conventional data management systems have failed to identify, let alone address.
+
+This paper proposes a theoretically grounded, mathematically formalised framework for a secure AI-driven education system prototype that addresses both challenges simultaneously. The core insight is that the problem is systemic: it cannot be solved by a data management application alone, nor by isolated improvements to examination administration. What is required is a real-time, multi-stakeholder analytical platform that integrates cybersecurity safeguards, machine learning anomaly detection, and structured collaboration among the three primary education actors the Student, the Teacher, and the Parent, collectively termed the Education Triad.
+
+The mathematical backbone of the framework draws on quadratic iteration theory, specifically the recurrence relation Xn+1 = X²n, which has been applied successfully in modelling chaotic and complex systems across population dynamics, financial modelling, and engineering. Adapting this to an AI and cybersecurity education context constitutes a novel contribution. The resulting prototype, Learning Efficiency 2.0, is available as an open-source application at github.com/mngugi/Learning_Efficiency2_0.
+
+
+---
 
 ## Concept
 
