@@ -464,6 +464,7 @@ Session B: Theory-aligned practice
   Le:         24.0 / 4  =  6.0    →  Excellent
 
 Same 3 hours. Very different knowledge output.
+
 ```
 
 ---
