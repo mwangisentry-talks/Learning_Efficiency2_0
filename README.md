@@ -26,7 +26,7 @@ The mathematical backbone of the framework draws on quadratic iteration theory, 
 
 ## Concept
 
-Designed by a PhD candidate in AI and Cyber Forensics, this system automates the measurement of learning efficiency across study sessions. Rather than tracking time alone, it quantifies the relationship between productive output and unresolved friction, giving a scientific score to every research session.
+Designed by a PhD candidate in AI and Cyber Forensics, this system automates measuring learning efficiency across study sessions. Rather than tracking time alone, it quantifies the relationship between productive output and unresolved friction, giving a scientific score to every research session.
 
 > The system is not a productivity app. It is a **live knowledge density map**,  a running measure of how efficiently a researcher converts study
 > time into a durable, connected understanding across six research pillars.
