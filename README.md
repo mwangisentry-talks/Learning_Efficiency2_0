@@ -19,7 +19,9 @@ Simultaneously, a longitudinal analysis of KCSE performance reveals that approxi
 
 This paper proposes a theoretically grounded, mathematically formalised framework for a secure AI-driven education system prototype that addresses both challenges simultaneously. The core insight is that the problem is systemic: it cannot be solved by a data management application alone, nor by isolated improvements to examination administration. What is required is a real-time, multi-stakeholder analytical platform that integrates cybersecurity safeguards, machine learning anomaly detection, and structured collaboration among the three primary education actors: the Student, the Teacher, and the Parent, collectively termed the Education Triad.
 
-The mathematical backbone of the framework draws on quadratic iteration theory, specifically the recurrence relation $ X_n+1 = X²n $, which has been applied successfully in modelling chaotic and complex systems across population dynamics, financial modelling, and engineering. Adapting this to an AI and cybersecurity education context constitutes a novel contribution. The resulting prototype, Learning Efficiency 2.0, is available as an open-source application at github.com/mngugi/Learning_Efficiency2_0.
+The mathematical backbone of the framework draws on quadratic iteration theory, specifically the recurrence relation $ Xn+1=Xn2 $
+​
+, which has been applied successfully in modelling chaotic and complex systems across population dynamics, financial modelling, and engineering. Adapting this to an AI and cybersecurity education context constitutes a novel contribution. The resulting prototype, Learning Efficiency 2.0, is available as an open-source application at github.com/mngugi/Learning_Efficiency2_0.
 
 
 ---
