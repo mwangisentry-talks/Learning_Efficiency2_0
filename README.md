@@ -22,6 +22,39 @@ This paper proposes a theoretically grounded, mathematically formalised framewor
 The mathematical backbone of the framework draws on quadratic iteration theory, specifically the recurrence relation $$X_{n+1} = X_n^2$$
 , which has been applied successfully in modelling chaotic and complex systems across population dynamics, financial modelling, and engineering. Adapting this to an AI and cybersecurity education context constitutes a novel contribution. The resulting prototype, Learning Efficiency 2.0, is available as an open-source application at github.com/mngugi/Learning_Efficiency2_0.
 
+Given the recurrence relation:
+
+$$X_{n+1} = X_n^2$$
+
+**Solution:**
+
+Assume $X_0 > 0$. Take the natural logarithm of both sides:
+
+$$\ln(X_{n+1}) = \ln(X_n^2) = 2 \ln(X_n)$$
+
+Define $y_n = \ln(X_n)$. Then:
+
+$$y_{n+1} = 2 y_n$$
+
+This is a simple linear recurrence. The solution is:
+
+$$y_n = 2^n y_0$$
+
+Substitute back $y_n = \ln(X_n)$ and $y_0 = \ln(X_0)$:
+
+$$\ln(X_n) = 2^n \ln(X_0) = \ln\left(X_0^{2^n}\right)$$
+
+Therefore:
+
+$$X_n = X_0^{2^n}$$
+
+**Summary:**
+
+- If $0 < X_0 < 1$: $X_n \to 0$ as $n \to \infty$
+- If $X_0 = 1$: $X_n = 1$ for all $n$
+- If $X_0 > 1$: $X_n \to \infty$ (double exponential growth)
+- If $X_0 = 0$: $X_n = 0$ for all $n \ge 1$
+- If $X_0 < 0$: squaring makes $X_1$ positive, then follows the same rule from $n=1$ onward.
 
 ---
 
